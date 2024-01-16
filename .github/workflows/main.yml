@@ -1,9 +1,10 @@
-name: Android CI/CD
-
+name: CI
 on:
   push:
-    branches:
-      - main  # or the branch you want to trigger on
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch: # or the branch you want to trigger on
 
 jobs:
   build:
